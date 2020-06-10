@@ -26,6 +26,6 @@ distribution_n2 = np.random.normal(mean,deviation,1000)*2
 
 sns_plot  = sns.distplot(distribution_n1, kde=True, rug=False)
 sns_plot  = sns.distplot(distribution_n2, kde=True, rug=False)
-plt.savefig('c:/Users/Arenter/Documents/GitHub/ML_Projects/docker_intro//output/plot.png')
+plt.savefig('c:/Users/Arenter/documents/GitHub/ML_Projects/docker_intro/my_first_container/src/output/plot.png')
 
 print('Файл успешно сохранен')
