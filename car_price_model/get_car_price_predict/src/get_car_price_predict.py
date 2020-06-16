@@ -39,4 +39,4 @@ def predict():
 if __name__ == '__main__':
     model = CatBoostRegressor()
     model.load_model('catboost_single_model_baseline.model')
-    app.run('0.0.0.0')
+    app.run('car_price_predict', 5000, debug=True)
