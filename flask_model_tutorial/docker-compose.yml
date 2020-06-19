@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  checker:
+    #build: checker
+    image: mike0sv/sf_docker_check
+    container_name: checker
+
+  solution:
+    build:
+      context: ./solution
+    restart: always
+    hostname: solution
+    ports:
+      - 5000:5000
+      
+  client:
+    build:
+      context: ./client
+    restart: always
+    depends_on:
+      - solution
